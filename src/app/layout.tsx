@@ -1,6 +1,7 @@
+import '@/app/globals.css';
+import Drawer from '@/components/drawer/drawer';
 import type { Metadata } from 'next';
 import { Figtree } from 'next/font/google';
-import './globals.css';
 
 const figtree = Figtree({
   variable: '--font-figtree',
@@ -20,8 +21,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html data-theme='lofi' lang='en'>
-      <body className={`${figtree.variable}  antialiased`}>{children}</body>
+    <html data-theme='dark' lang='en'>
+      <body className={`${figtree.variable}  antialiased`}>
+        <Drawer>{children}</Drawer>
+      </body>
     </html>
   );
 }
