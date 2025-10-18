@@ -6,20 +6,22 @@ import { navLinks } from '@/lib/data';
 
 const Nav = () => {
   return (
-    <nav className='navbar bg-base-100 overlay-pane'>
-      <div className='flex-1'>
-        <Logo />
-      </div>
-      <div className='flex-none'>
-        <NavLinks>
-          {navLinks.map(({ href, label }) => (
-            <LinkItem key={label} href={href} label={label} />
-          ))}
-        </NavLinks>
+    <div className='w-full fixed z-50 bg-transparent backdrop-blur-lg shadow-sm'>
+      <nav className='navbar overlay-pane container'>
+        <div className='flex-1'>
+          <Logo />
+        </div>
+        <div className='flex-none'>
+          <NavLinks>
+            {navLinks.map(({ href, label }) => (
+              <LinkItem key={label} href={href} label={label} />
+            ))}
+          </NavLinks>
 
-        <HamburgerMenu />
-      </div>
-    </nav>
+          <HamburgerMenu />
+        </div>
+      </nav>
+    </div>
   );
 };
 
