@@ -1,5 +1,6 @@
 import me from '@/assets/me.png';
 import Button from '@/components/button';
+import ProjectsList from '@/components/projects/projects-list';
 import SectionHeading from '@/components/section-heading';
 import SectionLabel from '@/components/section-label';
 import TechStackList from '@/components/tech/tech-stack-list';
@@ -70,15 +71,15 @@ export default function Home() {
               <div className='text-body space-y-4'>
                 <p>
                   Experienced software engineer with over four years of
-                  experience developing and optimizing solid front-end and
+                  experience developing and optimizing solid front-end and
                   server-side applications.
                 </p>
 
                 <p>
-                  Expertise in designing and implementing RESTful
-                  APIs, architecting intricate database systems, and integrating
-                  with cloud platforms. competent in performance tuning to
-                  ensure the scalability and reliability of overall systems.
+                  Expertise in designing and implementing RESTful APIs,
+                  architecting intricate database systems, and integrating with
+                  cloud platforms. competent in performance tuning to ensure the
+                  scalability and reliability of overall systems.
                 </p>
               </div>
             </div>
@@ -92,6 +93,7 @@ export default function Home() {
 
         <section id='projects' className='space-y-10 md:space-y-16'>
           <SectionHeading label='some of my work' left />
+          <ProjectsList />
         </section>
       </main>
     </>
