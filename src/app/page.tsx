@@ -61,7 +61,7 @@ export default function Home() {
                 priority
                 placeholder='blur'
                 alt='A photo of Omara George Boniface'
-                className='aspect-square sm:aspect-9/12 object-cover object-top overflow-hidden rounded-xl shadow-lg'
+                className='aspect-square sm:aspect-9/12 object-cover object-top overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-all duration-500 ease-in-out'
               />
             </div>
 
