@@ -15,15 +15,15 @@ export default function Home() {
         className='w-full h-[calc(70vh-4rem)] md:h-[calc(100vh-4rem)] mt-16 flex flex-col items-center justify-center'
       >
         <div className='space-y-4 md:space-y-6 text-center md:text-left'>
-          <h2 className='text-medium'>
+          <h3 className='text-medium'>
             Hi! I&apos;m <span className='font-bold text-primary'>George</span>
-          </h2>
-          <h3 className='text-large'>Full-Stack Software Developer</h3>
-          <h3 className='text-base md:text-lg max-w-sm md:max-w-md lg:max-w-xl mx-auto md:ml-0'>
-            Passionate about building high-performance <strong>Web</strong> and{' '}
-            <strong>Mobile</strong> apps that solve your toughest challenges and
-            boost business growth.
           </h3>
+          <h1 className='text-large'>Full-Stack Software Developer</h1>
+          <p className='text-base md:text-lg max-w-sm md:max-w-md lg:max-w-xl mx-auto md:ml-0'>
+            Passionate about building high-performance <strong>web</strong> and{' '}
+            <strong>mobile</strong> apps that help businesses grow and resolve
+            any pressing challenges.
+          </p>
           <h4 className='w-fit flex gap-x-1 text-lg mx-auto md:ml-0'>
             <span>
               <svg
