@@ -19,7 +19,7 @@ export default function Home() {
             Hi! I&apos;m <span className='font-bold text-primary'>George</span>
           </h2>
           <h3 className='text-large'>Full-Stack Software Developer</h3>
-          <h3 className='text-body max-w-sm md:max-w-md lg:max-w-xl mx-auto md:ml-0'>
+          <h3 className='text-base md:text-lg max-w-sm md:max-w-md lg:max-w-xl mx-auto md:ml-0'>
             Passionate about building high-performance <strong>Web</strong> and{' '}
             <strong>Mobile</strong> apps that solve your toughest challenges and
             boost business growth.
@@ -46,7 +46,7 @@ export default function Home() {
             href='/my-resume.pdf'
             download='Omara_George_Boniface_Professional_Resume.pdf'
             target='_blank'
-            className='btn btn-primary md:btn-lg rounded-xl'
+            className='btn btn-primary md:btn-lg rounded-xl animate-pulse'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -57,7 +57,7 @@ export default function Home() {
               <path d='M12 1.5a.75.75 0 0 1 .75.75V7.5h-1.5V2.25A.75.75 0 0 1 12 1.5ZM11.25 7.5v5.69l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V7.5h3.75a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3h-9a3 3 0 0 1-3-3v-9a3 3 0 0 1 3-3h3.75Z' />
             </svg>
 
-            <span>Download my resume</span>
+            <span>Download Resume</span>
           </Link>
         </div>
       </header>
@@ -80,16 +80,24 @@ export default function Home() {
 
               <div className='text-body space-y-4'>
                 <p>
-                  Experienced software engineer with over four years of
-                  experience developing and optimizing solid front-end and
-                  server-side applications.
+                  I&apos;m a <strong>Software Engineer</strong> with over four
+                  years of experience building and optimizing modern{' '}
+                  <strong>web</strong> and <strong>mobile</strong> applications.
+                  I handle everything from the interactive interfaces you see (
+                  <strong>Front-End</strong>) to the powerful logic running
+                  behind the scenes (<strong>Back-End</strong>).
                 </p>
 
                 <p>
-                  Expertise in designing and implementing RESTful APIs,
-                  architecting intricate database systems, and integrating with
-                  cloud platforms. competent in performance tuning to ensure the
-                  scalability and reliability of overall systems.
+                  My core expertise is in building scalable{' '}
+                  <strong>RESTful APIs</strong> using technologies like{' '}
+                  <strong>Node.js</strong> and <strong>Nest.js</strong>. I
+                  secure and deploy systems using <strong>Docker</strong> and
+                  manage complex data with <strong>Postgres</strong>. Whether
+                  it&apos;s setting up a high-speed production server or
+                  automating deployments with <strong>CI/CD</strong> pipelines,
+                  my goal is to deliver reliable, high-performance systems that
+                  can handle serious growth.
                 </p>
               </div>
             </div>
