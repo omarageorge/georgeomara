@@ -9,9 +9,11 @@ type Props = {
 const Button = ({ label, primary, className }: Props) => {
   return (
     <button
-      className={clsx('btn shadow-none hover:shadow-sm', className, {
-        'btn-primary': primary,
-      })}
+      className={clsx(
+        'btn shadow-none hover:shadow hover:scale-105 transition-all duration-500 ease-in-out',
+        className,
+        { 'btn-primary': primary }
+      )}
     >
       {label}
     </button>
