@@ -1,3 +1,4 @@
+import Footer from '@/components/footer';
 import LinkItem from '@/components/nav/link-item';
 import Logo from '@/components/nav/logo';
 import Nav from '@/components/nav/nav';
@@ -11,11 +12,10 @@ const Drawer = ({ children }: Props) => (
   <div className='drawer'>
     <input id='my-drawer-1' type='checkbox' className='drawer-toggle' />
     <div className='drawer-content'>
-      <div className='container'>
-        <Nav />
-        {/* Page content here */}
-        <main className='w-full px-6'>{children}</main>
-      </div>
+      <Nav />
+      {/* Page content here */}
+      <div className='w-full container px-6'>{children}</div>
+      <Footer />
     </div>
     <div className='drawer-side'>
       <label
