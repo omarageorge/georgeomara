@@ -1,12 +1,45 @@
 @import 'tailwindcss';
-@plugin "daisyui" {
-  themes: light --default, dark --prefersdark;
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: 'dark';
+  /* name: 'light'; */
+  default: true;
+  prefersdark: true;
+  color-scheme: dark;
+
+  --color-primary: oklch(64.6% 0.222 41.116);
+  --color-primary-content: oklch(98% 0.01 240);
+  --color-secondary: oklch(90% 0.222 41.116);
+  /* --color-base-content: #1f2937; */
+
+  /* border size */
+  --border: 0px;
+
+  /* effects */
+  --depth: 1;
+  --noise: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container {
-  @apply w-full md:max-w-7xl mx-auto;
+  @apply w-full md:max-w-4xl mx-auto;
 }
 
 .overlay-pane {
   @apply bg-transparent border-none shadow-none;
+}
+
+.text-large {
+  @apply font-bold text-4xl md:text-6xl;
+}
+
+.text-medium {
+  @apply font-semibold text-3xl md:text-5xl;
+}
+
+.text-body {
+  @apply font-normal text-base md:text-lg;
 }
