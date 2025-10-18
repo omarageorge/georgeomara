@@ -1,4 +1,3 @@
-import legourmet from '@/asset/mywork/legourmet.png';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 
