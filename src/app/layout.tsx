@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html data-theme='dark' lang='en'>
+    <html data-theme='custom' lang='en'>
       <body className={`${figtree.variable}  antialiased`}>
         <Drawer>{children}</Drawer>
       </body>
