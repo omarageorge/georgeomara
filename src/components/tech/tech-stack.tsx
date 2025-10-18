@@ -6,7 +6,7 @@ type Props = {
 };
 
 const TechStack = ({ label, image }: Props) => (
-  <div className='w-full p-4 border rounded-xl flex items-center gap-x-3'>
+  <div className='w-full p-4 border rounded-xl flex items-center gap-x-3 hover:shadow hover:bg-base-300 hover:scale-105 transition-all duration-500 ease-in-out'>
     <Image
       src={image}
       priority
