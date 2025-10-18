@@ -6,7 +6,7 @@ import { navLinks } from '@/lib/data';
 
 const Nav = () => {
   return (
-    <div className='w-full fixed z-50 bg-transparent backdrop-blur-lg shadow-sm'>
+    <div className='w-full fixed z-50 bg-transparent backdrop-blur-3xl shadow-sm'>
       <nav className='navbar overlay-pane container'>
         <div className='flex-1'>
           <Logo />
