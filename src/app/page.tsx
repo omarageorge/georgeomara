@@ -1,5 +1,5 @@
 import me from '@/assets/me.png';
-import Button from '@/components/button';
+import ContactLinks from '@/components/contact-links';
 import ProjectsList from '@/components/projects/projects-list';
 import SectionHeading from '@/components/section-heading';
 import SectionLabel from '@/components/section-label';
@@ -39,15 +39,25 @@ export default function Home() {
                 />
               </svg>
             </span>
-            <span>Gulu, Uganda</span>
+            <span>Kampala, Uganda</span>
           </h4>
 
-          <Link href='#about'>
-            <Button
-              label='Get to know me'
-              primary
-              className='md:btn-lg rounded-xl'
-            />
+          <Link
+            href='/my-resume.pdf'
+            download='Omara_George_Boniface_Professional_Resume.pdf'
+            target='_blank'
+            className='btn btn-primary md:btn-lg rounded-xl'
+          >
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 24 24'
+              fill='currentColor'
+              className='size-6'
+            >
+              <path d='M12 1.5a.75.75 0 0 1 .75.75V7.5h-1.5V2.25A.75.75 0 0 1 12 1.5ZM11.25 7.5v5.69l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V7.5h3.75a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3h-9a3 3 0 0 1-3-3v-9a3 3 0 0 1 3-3h3.75Z' />
+            </svg>
+
+            <span>Download my resume</span>
           </Link>
         </div>
       </header>
@@ -94,6 +104,19 @@ export default function Home() {
         <section id='projects' className='space-y-10 md:space-y-16'>
           <SectionHeading label='some of my work' left />
           <ProjectsList />
+        </section>
+
+        <section id='contact'>
+          <div className='w-full max-w-xl mx-auto space-y-6'>
+            <SectionLabel label="Let's connect today!" />
+
+            <p className='w-full max-w-md mx-auto text-center'>
+              Thanks for dropping in! Got questions or just want to connect?
+              Feel free to reach out on any platform below. 😊
+            </p>
+
+            <ContactLinks />
+          </div>
         </section>
       </main>
     </>
