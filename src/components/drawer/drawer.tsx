@@ -17,13 +17,13 @@ const Drawer = ({ children }: Props) => (
       <div className='w-full container px-6'>{children}</div>
       <Footer />
     </div>
-    <div className='drawer-side'>
+    <div className='z-40 drawer-side md:hidden'>
       <label
         htmlFor='my-drawer-1'
         aria-label='close sidebar'
         className='drawer-overlay'
       ></label>
-      <ul className='menu bg-base-200 min-h-full w-80 p-4'>
+      <ul className='menu backdrop-blur-3xl min-h-full w-80 p-4'>
         {/* Sidebar content here */}
         <div className='w-full h-auto py-2 rounded-md'>
           <Logo />
