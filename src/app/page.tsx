@@ -39,7 +39,7 @@ export default function Home() {
                 />
               </svg>
             </span>
-            <span>Kampala, Uganda</span>
+            <span>Gulu, Uganda</span>
           </h4>
 
           <Link
